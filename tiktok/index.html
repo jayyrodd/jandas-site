@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Returning to J and A's Clips</title>
+<style>body{background:#0b0d12;color:#e8eaf0;font-family:-apple-system,Segoe UI,Roboto,sans-serif;max-width:560px;margin:0 auto;padding:48px 20px;line-height:1.6}a{color:#ff2d55}</style>
+</head><body>
+<p>Sending you back to the J and A's Clips app on this computer…</p>
+<p>If nothing happens, make sure the app is open, then <a id="go" href="#">click here</a>.</p>
+<script>
+  // TikTok needs an https address; the app listens on this computer only.
+  var target = "http://127.0.0.1:8765/oauth/tiktok" + window.location.search;
+  document.getElementById("go").href = target;
+  window.location.replace(target);
+</script>
+</body></html>
